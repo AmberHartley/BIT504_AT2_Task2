@@ -44,7 +44,7 @@ public class GameMain extends JPanel implements MouseListener{
 	/** Constructor to setup the UI and game components on the panel */
 	public GameMain() {   
 		
-		// TODO: This JPanel fires a MouseEvent on MouseClicked so add required event listener to 'this'.          
+		// Event listener added to 'this'.          
 	    addMouseListener(this);
 	    
 		// Setup the status bar (JLabel) to display status message       
@@ -64,9 +64,6 @@ public class GameMain extends JPanel implements MouseListener{
 		board = new Board();
 		currentState = GameState.Playing;
 		currentPlayer = Player.Cross;
-		
-		//TODO: call the method to initialise the game board
-		
 
 	}
 	
@@ -112,9 +109,6 @@ public class GameMain extends JPanel implements MouseListener{
 			} else  {
 				statusBar.setForeground(Color.RED);          
 				statusBar.setText("It's 'O's Turn"); 
-				
-
-
 				
 			}       
 			} else if (currentState == GameState.Draw) {          
@@ -204,8 +198,8 @@ public class GameMain extends JPanel implements MouseListener{
 			initGame();            
 		}   
 		
-		paintComponent(this.getGraphics());
-		//TODO: redraw the graphics on the UI          
+		// Redraw the graphics on the UI
+		paintComponent(this.getGraphics());         
            
 	}
 		

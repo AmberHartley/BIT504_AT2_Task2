@@ -9,13 +9,13 @@ public class Cell {
 	//row and column of this cell
 	int row, col;
 	
-	/** Constructor to initialise this cell with the specified row and col */
+	/** Constructor to initialise this cell with the specified row and column */
 	public Cell(int row, int col) {
 		
-		// TODO: Initialise the variables row, col 
+		// Initialise the variables row & column
 		this.row = row;
 		this.col = col;
-		//TODO: call the method that sets the cell content to EMPTY
+		//Call the method that sets the cell content to EMPTY
 		 clear();
 	}
 	
@@ -43,8 +43,6 @@ public class Cell {
 	/** Set this cell's content to EMPTY */
 	public void clear() {
 		content = Player.Empty;
-		// TODO: Set the value of content to Empty (Remember this is an enum)
-
 		
 	}
 		
