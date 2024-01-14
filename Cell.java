@@ -13,14 +13,12 @@ public class Cell {
 	public Cell(int row, int col) {
 		
 		// TODO: Initialise the variables row, col 
-
-		
-		
+		this.row = row;
+		this.col = col;
 		//TODO: call the method that sets the cell content to EMPTY
-		 
+		 clear();
 	}
 	
-
 	/** Paint itself on the graphics canvas, given the Graphics context g */ 
 	public void paint(Graphics g) {
 		//Graphics2D allows setting of pen's stroke size
@@ -44,7 +42,7 @@ public class Cell {
 	
 	/** Set this cell's content to EMPTY */
 	public void clear() {
-		
+		content = Player.Empty;
 		// TODO: Set the value of content to Empty (Remember this is an enum)
 
 		
